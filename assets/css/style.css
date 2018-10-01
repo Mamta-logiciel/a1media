@@ -106,10 +106,24 @@ body {
     background-color: rgba(41, 50, 69, 0.76); }
 
 .form-inner-wrap {
+  position: relative;
   max-width: 650px;
   border: 8px solid rgba(0, 190, 226, 0.48); }
   .form-inner-wrap .section-title h2 span {
     background-color: transparent; }
+
+.form-group .form-control {
+  max-width: 300px;
+  background-color: #fff !important;
+  border-radius: 25px;
+  margin: auto;
+  border-color: #fff;
+  padding: 0.475rem .75rem; }
+  .form-group .form-control:focus {
+    -webkit-box-shadow: inset 0 0 0px 9999px white; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0px 9999px white; }
 
 .section-title {
   padding: 40px 0; }
@@ -143,4 +157,10 @@ body {
 
 .pricing-section {
   background: url(../img/pricing-banner.png) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  /*padding-bottom: 380px;*/ }
+  .pricing-section .card {
+    padding: 10px; }
+
+.games-banner img {
+  max-width: 100%; }
