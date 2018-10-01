@@ -1,0 +1,83 @@
+body {
+	font-family: 'Work Sans', sans-serif;
+	color: $black;
+}
+.topbar {
+	background-color: $black;
+	color: $white;
+   	font-size: 12px;
+   	padding: 5px 0;
+	a {
+		color: $blue-color;
+		text-decoration: none;
+	}
+}
+.top-bar-col {
+	display: inline-block;
+	margin-left: 20px;
+	font-weight: 600;
+	vertical-align: middle;
+}
+.phn-ico {
+	font-size: 8px;
+	vertical-align: middle;
+	margin-top: -3px;
+}
+.email-col {
+	a {
+		display: inline-block;
+		position: relative;
+	    vertical-align: text-bottom;
+	    margin-left: 8px;
+		&:after {
+			position: absolute;
+			content: "";
+			left: 0;
+			right: 0;
+			height: 1px;
+			background-color: $blue-color;
+			bottom: 2px;
+		}
+	}
+	i {
+		font-size: 14px;
+	}
+}
+.twi-ico {
+	font-size: 16px;
+}
+.navbar-light {
+	background-color: #fff;
+}
+.navbar-nav {
+	height: 100%;
+	align-items: center;
+	.nav-item {
+		height: 100%;
+		.nav-link {
+			height: 100%;
+			font-weight: 600;
+			color: $black;
+			padding: 1.7rem 0.8rem;
+			text-transform: uppercase;
+			margin-left: 15px;
+		}
+		&.active a {
+			background-color: $blue-color;
+			color: #fff !important;
+		}
+	}
+}
+.navbar-brand {
+	img {
+		height: 65px;
+	}
+}
+.logo-title {
+	margin-left: 20px;
+	font-weight: 700;
+	span {
+		font-family: Impact;
+		font-weight: 600;
+	}
+}
