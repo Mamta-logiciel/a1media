@@ -1,4 +1,13 @@
 .pricing-section {
 	background: url(../img/pricing-banner.png) no-repeat;
 	background-size: cover;
+	/*padding-bottom: 380px;*/
+	.card {
+		padding: 10px;
+	}
+}
+.games-banner {
+	img {
+		max-width: 100%;
+	}
 }

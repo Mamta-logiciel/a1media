@@ -146,6 +146,14 @@ body {
 .pricing-section {
   background: url(../img/pricing-banner.png) no-repeat;
   background-size: cover;
+  /*padding-bottom: 380px;*/
+}
+.pricing-section .card {
+  padding: 10px;
+}
+
+.games-banner img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
