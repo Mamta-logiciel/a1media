@@ -1,151 +1,146 @@
 body {
-  font-family: "Work Sans", sans-serif;
-  color: #000;
-}
+  font-family: 'Work Sans', sans-serif;
+  color: #000; }
 
 .topbar {
   background-color: #000;
   color: #fff;
   font-size: 12px;
-  padding: 5px 0;
-}
-.topbar a {
-  color: #00bce4;
-  text-decoration: none;
-}
+  padding: 5px 0; }
+  .topbar a {
+    color: #00bce4;
+    text-decoration: none; }
 
 .top-bar-col {
   display: inline-block;
   margin-left: 20px;
   font-weight: 600;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 .phn-ico {
   font-size: 8px;
   vertical-align: middle;
-  margin-top: -3px;
-}
+  margin-top: -3px; }
 
 .email-col a {
   display: inline-block;
   position: relative;
   vertical-align: text-bottom;
-  margin-left: 8px;
-}
-.email-col a:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: #00bce4;
-  bottom: 2px;
-}
+  margin-left: 8px; }
+  .email-col a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #00bce4;
+    bottom: 2px; }
 .email-col i {
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .twi-ico {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .navbar-light {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .navbar-nav {
   height: 100%;
-  align-items: center;
-}
-.navbar-nav .nav-item {
-  height: 100%;
-}
-.navbar-nav .nav-item .nav-link {
-  height: 100%;
-  font-weight: 600;
-  color: #000;
-  padding: 1.7rem 0.8rem;
-  text-transform: uppercase;
-  margin-left: 15px;
-}
-.navbar-nav .nav-item.active a {
-  background-color: #00bce4;
-  color: #fff !important;
-}
+  align-items: center; }
+  .navbar-nav .nav-item {
+    height: 100%; }
+    .navbar-nav .nav-item .nav-link {
+      height: 100%;
+      font-weight: 600;
+      color: #000;
+      padding: 1.7rem 0.8rem;
+      text-transform: uppercase;
+      margin-left: 15px; }
+    .navbar-nav .nav-item.active a {
+      background-color: #00bce4;
+      color: #fff !important; }
 
 .navbar-brand img {
-  height: 65px;
-}
+  height: 65px; }
 
 .logo-title {
   margin-left: 20px;
-  font-weight: 700;
-}
-.logo-title span {
-  font-family: Impact;
-  font-weight: 600;
-}
+  font-weight: 700; }
+  .logo-title span {
+    font-family: Impact;
+    font-weight: 600; }
 
 .hero-slide {
   position: relative;
   background-image: url("../img/hero-slide.jpg");
   background-size: cover;
   padding-top: 50px;
-  padding-bottom: 50px;
-}
-.hero-slide:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(41, 50, 69, 0.76);
-}
+  padding-bottom: 50px; }
+  .hero-slide:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(41, 50, 69, 0.76); }
 
 .slide-img {
-  max-width: 100%;
-}
+  max-width: 100%; }
+
+.section-container {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.form-section {
+  position: relative;
+  background-image: url("../img/form-banner.jpg");
+  background-size: cover; }
+  .form-section:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(41, 50, 69, 0.76); }
+
+.form-inner-wrap {
+  max-width: 650px;
+  border: 8px solid rgba(0, 190, 226, 0.48); }
+  .form-inner-wrap .section-title h2 span {
+    background-color: transparent; }
 
 .section-title {
-  padding: 40px 0;
-}
-.section-title h2 {
-  position: relative;
-  text-align: center;
-  font-weight: bold;
-  color: #00bce4;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-.section-title h2:before {
-  background: #d9d9d9;
-  content: "";
-  display: block;
-  height: 1px;
-  position: absolute;
-  top: 50%;
-  width: 50%;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-.section-title h2 span {
-  background: #fff;
-  padding: 0 30px;
-  position: relative;
-  z-index: 1;
-}
+  padding: 40px 0; }
+  .section-title h2 {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: #00bce4;
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+    .section-title h2:before {
+      background: #d9d9d9;
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      width: 50%;
+      right: 0;
+      left: 0;
+      margin: auto; }
+    .section-title h2 span {
+      background: #fff;
+      padding: 0 30px;
+      position: relative;
+      z-index: 1; }
 
 .advertiser .play-games {
   background: url(../img/gaming-clipart-transparent-background-7.png);
-  background-size: cover;
-}
+  background-size: cover; }
 
 .pricing-section {
   background: url(../img/pricing-banner.png) no-repeat;
-  background-size: cover;
-}
-
-/*# sourceMappingURL=style.css.map */
+  background-size: cover; }
