@@ -192,7 +192,7 @@ input:-webkit-autofill {
         height: 1px;
         position: absolute;
         top: 50%;
-        width: 200px;
+        width: 160px;
         left: 100%;
         background-color: #d9d9d9;
         margin: auto; }
@@ -204,7 +204,7 @@ input:-webkit-autofill {
         top: 50%;
         background-color: #d9d9d9;
         margin: auto;
-        width: 200px;
+        width: 160px;
         right: 100%; }
 
 .advertiser {
@@ -285,13 +285,76 @@ input:-webkit-autofill {
 
 .pricing-section {
   background: url(../img/pricing-banner.png) no-repeat;
-  background-size: cover;
-  /*padding-bottom: 380px;*/ }
+  background-size: cover; }
   .pricing-section .card {
-    padding: 10px; }
+    padding: 30px 10px;
+    border-color: #00bce4;
+    font-size: 14px; }
+  .pricing-section .card-title {
+    color: #87919d;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px; }
+  .pricing-section .card-icon {
+    position: relative;
+    display: block;
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #f3fcfe;
+    border-radius: 100%; }
+    .pricing-section .card-icon img {
+      position: relative;
+      height: 50px; }
+    .pricing-section .card-icon:before {
+      position: absolute;
+      content: "";
+      height: 90px;
+      width: 90px;
+      top: 50%;
+      left: 50%;
+      margin-top: -45px;
+      margin-left: -45px;
+      background-color: #e8f9fd;
+      border-radius: 100%; }
+  .pricing-section .price {
+    font-weight: 800; }
+  .pricing-section .video-view {
+    color: #87919d;
+    font-weight: 500; }
+  .pricing-section .expiry {
+    font-weight: 500; }
+  .pricing-section .info {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    color: #87919d;
+    font-size: 12px;
+    font-weight: 600; }
+  .pricing-section p {
+    font-size: 15px;
+    margin-bottom: 0; }
 
 .games-banner img {
   max-width: 100%; }
+
+.custom-btn {
+  color: #00bce4;
+  border-color: #00bce4;
+  background-color: #fff;
+  box-shadow: unset;
+  display: inline-block;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: .775rem .75rem;
+  min-width: 150px; }
+  .custom-btn:hover {
+    background-color: #00bce4;
+    color: #fff; }
 
 footer {
   background-color: #000;
