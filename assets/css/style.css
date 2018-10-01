@@ -165,32 +165,6 @@ body {
   margin-bottom: 0;
   color: #000;
 }
-.advertiser .advertiser-row .game-text ul {
-  margin-bottom: 0;
-  padding-left: 35px;
-  position: relative;
-}
-.advertiser .advertiser-row .game-text ul li {
-  list-style-type: none;
-  font-size: 15px;
-  color: #000;
-  text-align: justify;
-  font-weight: normal;
-  margin-top: 5px;
-}
-.advertiser .advertiser-row .game-text ul li:first-child {
-  margin-top: 3px;
-}
-.advertiser .advertiser-row .game-text ul li:before {
-  background: none repeat scroll 0 0 #00bce4;
-  border-radius: 50%;
-  content: "";
-  height: 7px;
-  margin-left: -20px;
-  margin-top: 8px;
-  position: absolute;
-  width: 7px;
-}
 .advertiser .advertiser-row .game-text .appsflyer img {
   display: inline-block;
   max-width: 85px;
@@ -200,12 +174,70 @@ body {
 .advertiser .advertiser-row .advertiser-bottom-row {
   padding-top: 70px;
 }
+.advertiser .advertiser-row .advertiser-bottom-row img {
+  max-width: 50px;
+}
 .advertiser .advertiser-row .advertiser-bottom-row .home {
-  width: 25%;
-  vertical-align: top;
+  width: 125px;
+  float: left;
+}
+.advertiser .advertiser-row .advertiser-bottom-row .home p {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #666971;
 }
 .advertiser .advertiser-row .advertiser-bottom-row .home-list {
-  width: 73%;
+  padding-left: 50px;
+  display: block;
+  margin-left: 125px;
+  padding-right: 60px;
+}
+.advertiser .advertiser-row .advertiser-bottom-row .home-list p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  line-height: 16px;
+  color: #666971;
+}
+.advertiser .advertiser-row .advertiser-bottom-row .app-list {
+  width: 50%;
+  float: left;
+}
+
+/* List */
+.advertiser ul {
+  margin-bottom: 0;
+  padding-left: 35px;
+  position: relative;
+}
+.advertiser ul.home-list-space {
+  padding-left: 22px;
+}
+.advertiser ul.home-list-space li {
+  color: #666971;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+.advertiser ul li {
+  list-style-type: none;
+  font-size: 15px;
+  color: #000;
+  text-align: justify;
+  font-weight: normal;
+  margin-top: 5px;
+}
+.advertiser ul li:first-child {
+  margin-top: 3px;
+}
+.advertiser ul li:before {
+  background: none repeat scroll 0 0 #00bce4;
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  margin-left: -20px;
+  margin-top: 8px;
+  position: absolute;
+  width: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
