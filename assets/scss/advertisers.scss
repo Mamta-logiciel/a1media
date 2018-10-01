@@ -1,33 +1,105 @@
 .advertiser {
+	background-color: $light-blue;
 	.title {
-		margin-top: 40px;
+		padding-top: 40px;
 		h2 {
 			position: relative;
 			text-align: center;
-		    font-weight: bold;
-		    color: $blue-color;
-			&:before {
-				background: $title-border;
-				content: "";
-				display: block;
-				height: 1px;
-				position: absolute;
-				top: 50%;
-				width: 70%;
-			    right: 0;
-			    left: 0;
-			    margin: auto;
-			}
+			font-weight: bold;
+			color: $blue-color;
 			span {
-				background: $white;
+				background: $light-blue;
 				padding: 0 30px;
 				position: relative;
 				z-index: 1;
+				&:before {
+					content: "";
+					display: block;
+					height: 1px;
+					position: absolute;
+					top: 50%;
+					width: 200px;
+					left: 100%;
+					background-color: $title-border;
+					margin: auto;
+				}
+				&:after {
+					content: "";
+					display: block;
+					height: 1px;
+					position: absolute;
+					top: 50%;
+					background-color: $title-border;
+					margin: auto;
+					width: 200px;
+					right: 100%;
+				}
 			}
 		}
 	}
-	.play-games {
-		background: url(../img/gaming-clipart-transparent-background-7.png);
-		background-size: cover;
+	.advertiser-row {
+		padding-top: 30px;
+		.play-games {
+			img {
+				max-width: 100%;
+			}
+		}
+		.game-text {
+			.cpm-video {
+				font-weight: bold;
+				color: $grey-color;
+				margin-bottom: 5px;
+				padding-left: 15px;
+			}
+			.games-discovery {
+				padding-left: 35px;
+				margin-bottom: 0;
+				color: $black;
+			}
+			ul {
+				margin-bottom: 0;
+				padding-left: 35px;
+				position: relative;
+				li {
+					list-style-type: none;
+					font-size: 15px;
+					color: $black;
+					text-align: justify;
+					font-weight: normal;
+					margin-top: 5px;
+					&:first-child {
+						margin-top: 3px;
+					}
+					&:before {
+						background: none repeat scroll 0 0 $blue-color;
+						border-radius: 50%;
+						content: "";
+						height: 7px;
+						margin-left: -20px;
+						margin-top: 8px;
+						position: absolute;
+						width: 7px;
+					}
+				}
+			}
+			.appsflyer {
+				img {
+					display: inline-block;
+					max-width: 85px;
+					vertical-align: -5px;
+					margin-left: 10px;
+				}
+			}
+		}
+		.advertiser-bottom-row {
+			padding-top: 70px;
+			.home {
+				width: 25%;
+				vertical-align: top;
+			}
+			.home-list {
+				width: 73%;
+			}
+		}
 	}
 }
