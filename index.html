@@ -3,8 +3,7 @@
 		<title>Landing</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -29,9 +28,9 @@
 					</div>
 				</div>
 			</div>
-			<nav class="navbar navbar-expand-lg navbar-light p-0">
+			<nav class="navbar navbar-expand-lg navbar-light py-0">
 				<div class="container">
-					<div class="d-flex justify-content-between w-100">
+					<div class="d-lg-flex justify-content-between w-100">
 						<div class="d-flex align-items-center">
 							<a class="navbar-brand" href="#">
 								<img src="assets/img/logo.png" class="d-inline-block align-top" alt="A1 Media">
@@ -65,38 +64,63 @@
 				</div>
 			</nav>
 		</header>
+		<!-- Hero Slide -->
 		<section class="hero-slide">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center align-items-lg-start">
 					<div class="col-sm-6">
-						
+						<div class="hero-slide-text">
+							<h1 class="slide-title">CPM Video Ad Network</h1>
+							<p>App Install Media is a premium provider of advanced Adtech solutions for App Developers and Digital Agencies.</p>
+						</div>
+						<div class="hero-slide-text">
+							<h2 class="slide-title">Our key objectives</h2>
+							<ul>
+								<li>
+									<span>Accelerate Android Games Discovery with Video</span>
+								</li>
+								<li>
+									<span>Make a Positive Impact on the lives of Others</span>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div class="col-sm-6">
-						<img src="assets/img/phone-slide.png" class="slide-img">
+						<img src="assets/img/phone-slide.png" class="slide-img" alt="slide">
 					</div>
+				</div>
+				<div class="slide-links">
+					<a href="#">PRIVACY POLICY</a>
+					<a href="#">TERMS AND CONDITIONS</a>
 				</div>
 			</div>
 		</section>
 		<!-- Advertisers- -->
-		<section class="advertiser"> 
+		<section class="advertiser section-container"> 
 			<div class="container">
 				<div class="section-title">
 					<h2><span>ADVERTISERS</span></h2>
 				</div>
 				<div class="advertiser-row">
 					<div class="row">
-						<div class="col-md-5">
+						<div class="col-lg-5 col-md-12 text-lg-left text-md-center">
 							<div class="play-games">
 								<img src="assets/img/game.png" alt="game">
 							</div>
 						</div>
-						<div class="col-md-7 game-text">
+						<div class="col-lg-7 col-md-12 game-text">
 							<p class="cpm-video">CPM Video Ad Network</p>
 							<p class="games-discovery">Accelerating Android Games Discovery in the U.K. and the USA with Video</p>
 							<ul>
-								<li>We charge Advertisers for CPM Video Views (15 secs max)</li>
-								<li>After watching your App Promotion Video the Smartphone user is given the opportunity to install the Game being promoted. </li>
-								<li>Our Intelligent Ad Rotation system (with frequency capping) is managed by our proprietary AI to ensure that your Video is only viewed by your optimum Target Audience.</li>
+								<li>
+									<span>We charge Advertisers for CPM Video Views (15 secs max)</span>
+								</li>
+								<li>
+									<span>After watching your App Promotion Video the Smartphone user is given the opportunity to install the Game being promoted.</span>
+								</li>
+								<li>
+									<span>Our Intelligent Ad Rotation system (with frequency capping) is managed by our proprietary AI to ensure that your Video is only viewed by your optimum Target Audience.</span>
+								</li>
 							</ul>
 							<div class="appsflyer">
 								<p class="cpm-video d-inline-block">Powered by</p>
@@ -105,7 +129,7 @@
 						</div>
 					</div>
 					<div class="row advertiser-bottom-row">
-						<div class="col-sm-6">
+						<div class="col-lg-6">
 							<div class="home">
 								<img src="assets/img/home.png" alt="home">
 								<p>Free Dashboard</p>
@@ -113,47 +137,50 @@
 							<div class="home-list">
 								<p>Using our free Dashboard you can view real-time Customer Feedback on your 15 secs App Promotion Video broken down by:</p>
 								<ul class="home-list-space">
-									<li>Thumbs Up & Thumbs Down </li>
-									<li>Video Views (15 secs max) </li>
-									<li>Clicks (only recorded when Android user specifically clicks to install your Game i.e. no "fat fingers" distorting the data) </li>
-									<li>Country (UK and USA only)</li>
+									<li><span>Thumbs Up & Thumbs Down</span></li>
+									<li><span>Video Views (15 secs max)</span></li>
+									<li><span>Clicks (only recorded when Android user specifically clicks to install your Game i.e. no "fat fingers" distorting the data)</span></li>
+									<li><span>Country (UK and USA only)</span></li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-lg-6">
 							<div class="home">
 								<img src="assets/img/play-store.png" alt="play-store">
 								<p>Google Store Games Only</p>
 							</div>
 							<div class="home-list">
 								<p>We only accept and promote Apps currently available on the Google Play Store within 1 of their 17 Games Categories:</p>
-							<div class="row">
-								<div class="col-sm-3">
-									<p>Action</p>
-									<p>Arcade</p>
-									<p>Card</p>
-									<p>Casual</p>
+								<div class="row game-cats">
+									<div class="col-sm-6">
+										<div class="cats-col">
+											<p>Action</p>
+											<p>Arcade</p>
+											<p>Card</p>
+											<p>Casual</p>
+										</div>
+										<div class="cats-col">
+											<p>Adventure</p>
+											<p>Board</p>
+											<p>Casino</p>
+											<p>Educational</p>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="cats-col">
+											<p>Music</p>
+											<p>Racing</p>
+											<p>Simulation</p>
+											<p>Strategy	Word</p>
+										</div>
+										<div class="cats-col">
+											<p>Puzzle</p>
+											<p>Role Playing</p>
+											<p>Sports</p>
+											<p>Trivia</p>
+										</div>
+									</div>
 								</div>
-								<div class="col-sm-3">
-									<p>Adventure</p>
-									<p>Board</p>
-									<p>Casino</p>
-									<p>Educational</p>
-									<p>nbnbn</p>
-								</div>
-								<div class="col-sm-3">
-									<p>Music	</p>
-									<p>Racing</p>
-									<p>Simulation</p>
-									<p>Strategy	Trivia</p>
-								</div>
-								<div class="col-sm-3">
-									<p>Puzzle</p>
-									<p>Role Playing</p>
-									<p>Sports</p>
-									<p>Trivia</p>
-								</div>
-							</div>
 							</div>
 						</div>
 					</div>
@@ -161,14 +188,14 @@
 			</div>
 		</section>
 		<!-- Pricing Section -->
-		<section class="pricing-section">
+		<section class="pricing-section section-container pb-0">
 			<div class="container">
 				<div class="section-title">
 					<h2><span>Pricing</span></h2>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card text-center">
+				<div class="row pricing-row">
+					<div class="col-md-4 pricing-col">
+						<div class="card text-center mb-sm-0 mb-4">
 							<h3 class="card-title">Passion</h3>
 							<span class="card-icon">
 								<img src="assets/img/passion.png" alt="passion">
@@ -177,13 +204,13 @@
 							<p class="video-view">200 Video Views</p>
 							<p class="expiry">7 Days Expiry</p>
 							<span class="info">Intelligent Ad Rotation & 24 hour email support</span>
-							<div class="d-inline-block">
+							<div class="d-inline-block pb-3">
 								<a href="#" class="btn custom-btn">Sign up</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="card text-center">
+					<div class="col-md-4 pricing-col">
+						<div class="card text-center mb-sm-0 mb-4">
 							<h3 class="card-title">Romance</h3>
 							<span class="card-icon">
 								<img src="assets/img/romance.png" alt="passion">
@@ -192,13 +219,13 @@
 							<p class="video-view">1000 Video Views</p>
 							<p class="expiry">No Expiry</p>
 							<span class="info">Intelligent Ad Rotation & 24 hour email support</span>
-							<div class="d-inline-block">
+							<div class="d-inline-block pb-3">
 								<a href="#" class="btn custom-btn">Sign up</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="card text-center">
+					<div class="col-md-4 pricing-col">
+						<div class="card text-center mb-sm-0 mb-4">
 							<h3 class="card-title">Commitment</h3>
 							<span class="card-icon">
 								<img src="assets/img/smartphone.png" alt="passion">
@@ -207,7 +234,7 @@
 							<p class="video-view">25.000 Video Views</p>
 							<p class="expiry">No Expiry</p>
 							<span class="info">Intelligent Ad Rotation & 24 hour email support</span>
-							<div class="d-inline-block">
+							<div class="d-inline-block pb-3">
 								<a href="#" class="btn custom-btn">Sign up</a>
 							</div>
 						</div>
@@ -254,14 +281,14 @@
 		<footer>
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-3">
+					<div class="col-lg-3 col-md-12 text-center text-lg-left mb-lg-0 mb-3">
 						<img src="assets/img/footer-logo.png" alt="logo" class="footer-logo">
 					</div>
-					<div class="col-6 contact-desc">
+					<div class="col-lg-5 col-md-7 contact-desc mb-md-0 mb-3">
 						<h5>CONTACT</h5>
 						<p>App Install Media is managed by Lo88o, 3616 Kirkwood Highway Suite A - 1034 Wilmington, DE 19808, USA</p>
 					</div>
-					<div class="col-3 footer-contact">
+					<div class="col-lg-4 col-md-5 footer-contact">
 						<div>
 							<i class="fas fa-phone fa-flip-horizontal"></i>
 							<span class="cont-info">+212 214 3344</span>

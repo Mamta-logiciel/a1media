@@ -8,6 +8,13 @@ footer {
 	height: 90px;
 }
 .footer-contact {
+	font-weight: 600;
+	@media(min-width: 992px) {
+		padding-left: 30px;
+	}
+	@media(min-width: 1200px) {
+		padding-left: 90px;
+	}
 	& > div {
 		margin-bottom: 2px;
 		&:last-child {

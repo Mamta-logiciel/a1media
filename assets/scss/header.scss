@@ -6,7 +6,7 @@ body {
 	background-color: $black;
 	color: $white;
    	font-size: 12px;
-   	padding: 5px 0;
+   	padding: 2px 0;
 	a {
 		color: $blue-color;
 		text-decoration: none;
@@ -44,6 +44,8 @@ body {
 	}
 }
 .twi-ico {
+	display: block;
+	padding-top: 3px;
 	font-size: 16px;
 }
 .navbar-light {
@@ -56,11 +58,15 @@ body {
 		height: 100%;
 		.nav-link {
 			height: 100%;
-			font-weight: 600;
+			font-weight: 700;
 			color: $black;
 			padding: 1.7rem 0.8rem;
 			text-transform: uppercase;
 			margin-left: 15px;
+			transition: 0.2s ease;
+			&:hover {
+				color: $blue-color;
+			}
 		}
 		&.active a {
 			background-color: $blue-color;
@@ -76,8 +82,45 @@ body {
 .logo-title {
 	margin-left: 20px;
 	font-weight: 700;
+	font-size: 1.15rem;
 	span {
 		font-family: Impact;
 		font-weight: 600;
+		font-size: 1.2rem;
+	}
+	@media(max-width: 576px) {
+		display: none;
+	}
+}
+@media(max-width: 991px) {
+	.navbar-light {
+		.navbar-toggler {
+			position: absolute;
+			right: 0;
+			top: 20px;
+			padding-right: 15px;
+			border: 0;
+			color: #000;
+			&:focus {
+				border: 0;
+				outline: 0;
+			}
+		}
+		.navbar-nav {
+			margin-top: 30px;
+			.nav-item {
+				width: 100%;
+				a.nav-link {
+					padding-top: 0.7rem;
+					padding-bottom: 0.7rem;
+					padding-left: 0;
+					margin-left: 0;
+				}
+				&.active a {
+					color: $blue-color !important;
+					background-color: transparent;
+				}
+			}
+		}
 	}
 }

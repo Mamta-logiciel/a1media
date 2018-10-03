@@ -1,9 +1,10 @@
 .section-title {
-	padding: 40px 0;
 	h2 {
 		position: relative;
+		margin-top: 0;
+		margin-bottom: 40px;
 		text-align: center;
-		font-weight: bold;
+		font-weight: 800;
 		color: $blue-color;
 		text-transform: uppercase;
     	font-size: 1.5rem;
@@ -11,26 +12,24 @@
 			padding: 0 30px;
 			position: relative;
 			z-index: 1;
-			&:before {
-				content: "";
-				display: block;
-				height: 1px;
-				position: absolute;
-				top: 50%;
-				width: 160px;
-				left: 100%;
-				background-color: $title-border;
-				margin: auto;
-			}
+			&:before,
 			&:after {
 				content: "";
 				display: block;
 				height: 1px;
 				position: absolute;
 				top: 50%;
+				width: 160px;
 				background-color: $title-border;
 				margin: auto;
-				width: 160px;
+				@media(max-width: 576px) {
+					width: 50px;
+				}
+			}
+			&:before {
+				left: 100%;
+			}
+			&:after {
 				right: 100%;
 			}
 		}
@@ -39,7 +38,6 @@
 .advertiser {
 	background-color: $light-blue;
 	.advertiser-row {
-		padding-top: 30px;
 		.play-games {
 			img {
 				max-width: 100%;
@@ -68,35 +66,45 @@
 		}
 		.advertiser-bottom-row {
 			padding-top: 70px;
+			font-size: 0.9rem;
 			img {
 				max-width: 50px;
 			}
 			.home {
-				width: 125px;
 				float: left;
+				width: 135px;
 				p {
-					margin-top: 15px;
+					margin-top: 22px;
 					font-weight: bold;
 					color: $light-gray;
+					line-height: normal;
 				}
 			}
 			.home-list {
-				padding-left: 50px;
 				display: block;
-				margin-left: 125px;
-				padding-right: 60px;
+				margin-left: 140px;
 				p {
-					font-size: 13px;
-					margin-bottom: 10px;
 					line-height: 16px;
 					color: $light-gray;
 				}
-
+				ul {
+					padding-left: 18px;
+					font-weight: 600;
+					li span {
+						color: $light-gray;
+					}
+				}
 			}
 			.app-list {
-					width: 50%;
-					float: left;
+				width: 50%;
+				float: left;
+			}
+			@media(max-width: 991px) {
+				padding-top: 0;
+				& > div {
+					margin-top: 30px;
 				}
+			}
 		}
 	}
 }
@@ -105,34 +113,21 @@
 	margin-bottom: 0;
 	padding-left: 35px;
 	position: relative;
-	&.home-list-space{
-		padding-left: 22px;
-		li {
-			color: $light-gray;
-			font-weight: bold;
-			font-size: 14px;
-			line-height: 18px;
+	li {
+		margin-bottom: 2px;
+		span {
+			color: $black;
 		}
 	}
-	li {
-		list-style-type: none;
-		font-size: 15px;
-		color: $black;
-		text-align: justify;
-		font-weight: normal;
-		margin-top: 5px;
-		&:first-child {
-			margin-top: 3px;
-		}
-		&:before {
-			background: none repeat scroll 0 0 $blue-color;
-			border-radius: 50%;
-			content: "";
-			height: 7px;
-			margin-left: -20px;
-			margin-top: 8px;
-			position: absolute;
-			width: 7px;
-		}
+}
+.game-cats {
+
+}
+.cats-col {
+	float: left;
+	width: 50%;
+	font-weight: 600;
+	p {
+		margin-bottom: 0.4rem;
 	}
 }
