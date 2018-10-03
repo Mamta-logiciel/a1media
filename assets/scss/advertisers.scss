@@ -73,6 +73,9 @@
 			.home {
 				float: left;
 				width: 135px;
+				@media(max-width: 576px) {
+					width: 110px;
+				}
 				p {
 					margin-top: 22px;
 					font-weight: bold;
@@ -83,9 +86,15 @@
 			.home-list {
 				display: block;
 				margin-left: 140px;
+				@media(max-width: 576px) {
+					margin-left: 110px;
+				}
 				p {
 					line-height: 16px;
 					color: $light-gray;
+					@media(max-width: 576px) {
+						font-size: 12px;
+					}
 				}
 				ul {
 					padding-left: 18px;

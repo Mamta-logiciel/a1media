@@ -46,16 +46,16 @@
 						<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 							<ul class="navbar-nav">
 								<li class="nav-item active">
-									<a class="nav-link" href="#">About</a>
+									<a class="nav-link" href="#about-us">About</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Advertisers</a>
+									<a class="nav-link" href="#advertisers">Advertisers</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Pricing</a>
+									<a class="nav-link" href="#pricing">Pricing</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Log in</a>
+									<a class="nav-link" href="#login">Log in</a>
 								</li>
 							</ul>
 						</div>
@@ -96,7 +96,7 @@
 			</div>
 		</section>
 		<!-- Advertisers- -->
-		<section class="advertiser section-container"> 
+		<section class="advertiser section-container" id="advertisers"> 
 			<div class="container">
 				<div class="section-title">
 					<h2><span>ADVERTISERS</span></h2>
@@ -188,14 +188,14 @@
 			</div>
 		</section>
 		<!-- Pricing Section -->
-		<section class="pricing-section section-container pb-0">
+		<section class="pricing-section section-container pb-0" id="pricing">
 			<div class="container">
 				<div class="section-title">
 					<h2><span>Pricing</span></h2>
 				</div>
 				<div class="row pricing-row">
 					<div class="col-md-4 pricing-col">
-						<div class="card text-center mb-sm-0 mb-4">
+						<div class="card text-center mb-md-0 mb-4">
 							<h3 class="card-title">Passion</h3>
 							<span class="card-icon">
 								<img src="assets/img/passion.png" alt="passion">
@@ -210,7 +210,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 pricing-col">
-						<div class="card text-center mb-sm-0 mb-4">
+						<div class="card text-center mb-md-0 mb-4">
 							<h3 class="card-title">Romance</h3>
 							<span class="card-icon">
 								<img src="assets/img/romance.png" alt="passion">
@@ -225,7 +225,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 pricing-col">
-						<div class="card text-center mb-sm-0 mb-4">
+						<div class="card text-center mb-md-0 mb-4">
 							<h3 class="card-title">Commitment</h3>
 							<span class="card-icon">
 								<img src="assets/img/smartphone.png" alt="passion">
@@ -244,7 +244,7 @@
 			<div class="games-banner"><img src="assets/img/games-img.png" alt="games-banner"></div>
 		</section>
 		<!-- Form Section -->
-		<section class="form-section section-container">
+		<section class="form-section section-container" id="login">
 			<div class="container">
 				<div class="form-inner-wrap mx-auto">
 					<div class="section-title">
@@ -302,8 +302,22 @@
 			</div>
 		</footer>
 	</div>
-
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$("a").on('click', function(event) {
+			if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+					window.location.hash = hash;
+				});
+			} 
+		});
+	});
+</script>
 </body>
 </html>
