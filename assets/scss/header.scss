@@ -43,6 +43,12 @@ body {
 		font-size: 14px;
 	}
 }
+a.phn-call {
+	color: #fff;
+	&:hover {
+		opacity: 1;
+	}
+}
 .twi-ico {
 	display: block;
 	padding-top: 3px;
