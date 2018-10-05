@@ -116,7 +116,8 @@ ul {
 		color: #fff;
 		text-transform: uppercase;
 		font-weight: 600;
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: transparent;
 			color: $blue-color;
 		}
@@ -169,5 +170,17 @@ input:-webkit-autofill {
 	}
 	input[type=checkbox]:not(checked) + span {
 		background-image: url("../img/uncheck-box.png");
+	}
+}
+.forgot-pass-section {
+	.section-title h2 {
+		margin-bottom: 40px;
+	}
+	p {
+		color: $white;
+		font-size: 0.95rem;
+	}
+	form {
+		max-width: 350px;
 	}
 }

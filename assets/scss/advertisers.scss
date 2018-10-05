@@ -23,7 +23,7 @@
 				background-color: $title-border;
 				margin: auto;
 				@media(max-width: 576px) {
-					width: 50px;
+					display: none;
 				}
 			}
 			&:before {

@@ -243,19 +243,19 @@
 			</div>
 			<div class="games-banner"><img src="assets/img/games-img.png" alt="games-banner"></div>
 		</section>
-		<!-- Form Section -->
+		<!-- Login Form Section -->
 		<section class="form-section section-container" id="login">
 			<div class="container">
 				<div class="form-inner-wrap mx-auto">
 					<div class="section-title">
 						<h2><span>Login</span></h2>
 					</div>
-					<form method="post" action="#" enctype="multipart/form-data">
+					<form method="post" action="javascript:void(0)" enctype="multipart/form-data">
 						<div class="form-group">
-							<input type="text" name="username" class="form-control" placeholder="Username">
+							<input type="text" name="username" class="form-control" placeholder="Username" required>
 						</div>
 						<div class="form-group">
-							<input type="password" name="password" class="form-control" placeholder="Password">
+							<input type="password" name="password" class="form-control" placeholder="Password" required>
 						</div>
 						<label class="checkbox-col" for="login">
 							<input type="checkbox" name="login" id="login">
@@ -271,6 +271,30 @@
 							</span>
 							<span>
 								<a href="#">Forgot your password?</a>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- Forgot Password Form Section -->
+		<section class="form-section forgot-pass-section section-container" id="login">
+			<div class="container">
+				<div class="form-inner-wrap mx-auto">
+					<div class="section-title">
+						<h2><span>Forgot Password</span></h2>
+					</div>
+					<form method="post" action="javascript:void(0)" enctype="multipart/form-data">
+					<p class="text-center mb-4">Enter you e-mail address below to reset your password.</p>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control" placeholder="Email" required>
+						</div>
+						<div class="form-group mt-4">
+							<input type="submit" name="submit" class="btn btn-block submit-btn form-control" value="Submit">
+						</div>
+						<div class="form-bottom">
+							<span>
+								<a href="#">Back to log in</a>
 							</span>
 						</div>
 					</form>
